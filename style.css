@@ -1,4 +1,120 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+ /*  ...  */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   max-width: 1400px;
+   margin: 0 auto;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ li {
+   list-style: none;
+ }
+
+ .container {
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+
+ .header {
+   min-height: 170px;
+   padding: 10px 0;
+   background-color: #333;
+   color: #F90;
+ }
+
+ .header-content {
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: space-around;
+   flex-flow: row wrap;
+ }
+
+ .header-content .section {
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: flex-start;
+   flex-flow: row wrap;
+ }
+
+ .header-content .section p {
+   color: #F90;
+ }
+
+ .nav ul {
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: flex-end;
+   flex-flow: row wrap;
+ }
+
+ .nav-list a {
+   padding: 5px;
+   color: #F90;
+ }
+
+ .nav-list a:hover {
+   color: #fff;
+ }
+
+ .nav-list a:active {
+   color: #666;
+ }
+
+ .photo-avatar {
+   display: inline-block;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   background-image: url(assets/img/ava.jpg);
+   background-size: 150px 150px;
+   background-repeat: no-repeat;
+ }
+
+ .photo-avatar:active {
+   background-image: url(assets/img/AnaiLyu.gif);
+ }
+
+ .main {
+   /* display: flex; */
+   /* flex-wrap: wrap; */
+   /* align-items: center; */
+   /* align-content: center; */
+   /* justify-content: flex-start; */
+   /* flex-flow: row wrap; */
+ }
+
+ .main .section h2 {
+   color: #F90;
+ }
+
+ .main .section p {
+   color: #333;
+ }
+
+
+
+
+
+
+ /*
+порядок определения стилей:
+
+   позиционирование
+   блочная модель (размеры, отступы)
+   типографика (свойства шрифта)
+   оформление (цвет фона, тень)
+   анимация
+
+     colors: https://colorscheme.ru/#0P21Tw0w0w0w0
+*/
