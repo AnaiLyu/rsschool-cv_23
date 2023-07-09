@@ -1,4 +1,4 @@
- /*  ...  */
+ /*  плюс в карму тому, кто найдёт пасхалку  */
  * {
    margin: 0;
    padding: 0;
@@ -33,7 +33,7 @@
  .header-content {
    display: flex;
    align-items: center;
-   align-content: center;
+   /* align-content: center; */
    justify-content: space-around;
    flex-flow: row wrap;
  }
@@ -86,12 +86,20 @@
  }
 
  .main {
-   /* display: flex; */
-   /* flex-wrap: wrap; */
-   /* align-items: center; */
-   /* align-content: center; */
-   /* justify-content: flex-start; */
-   /* flex-flow: row wrap; */
+   padding: 100px 0;
+ }
+
+ .main .container {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   align-content: center;
+   justify-content: flex-start;
+   flex-flow: row wrap;
+ }
+
+ .main .section {
+   width: 50%;
  }
 
  .main .section h2 {
@@ -101,6 +109,40 @@
  .main .section p {
    color: #333;
  }
+
+
+ .footer {
+   min-height: 130px;
+   padding: 10px 0;
+   background-color: #333;
+   color: #F90;
+ }
+
+ .footer .container {
+   display: flex;
+   align-items: end;
+   justify-content: space-between;
+   flex-flow: row wrap;
+ }
+
+ .footer .logo-link {
+   /* width: 100px; */
+   /* height: 100px;     */
+
+ }
+
+ .footer .logo-img {
+   height: 100px;
+ }
+
+ .footer .logo-img:hover {
+   filter: invert(0.9);
+ }
+
+ .footer .logo-img:active {
+   filter: invert(0.6) sepia(1) saturate(4) hue-rotate(345deg);
+ }
+
 
 
 
