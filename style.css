@@ -13,6 +13,9 @@
    max-width: 1400px;
    min-height: 100vh;
    margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
  }
 
  a {
@@ -104,6 +107,7 @@
 
  .main {
    padding: 90px 0;
+   flex-grow: 1;
  }
 
  .main .container {
