@@ -5,13 +5,19 @@
    box-sizing: border-box;
  }
 
+ html {
+   scroll-behavior: smooth;
+ }
+
  body {
    max-width: 1400px;
+   min-height: 100vh;
    margin: 0 auto;
  }
 
  a {
    text-decoration: none;
+   transition: color 0.2s;
  }
 
  li {
@@ -27,14 +33,13 @@
  .header {
    min-height: 170px;
    padding: 10px 0;
-   background-color: #333;
    color: #F90;
+   background-color: #333;
  }
 
  .header-content {
    display: flex;
    align-items: center;
-   /* align-content: center; */
    justify-content: space-between;
    flex-flow: row wrap;
  }
@@ -115,7 +120,6 @@
 
  .main .section:nth-last-child(1) {
    margin-bottom: 0;
-   width: 80%;
  }
 
  .main .section h2 {
@@ -132,6 +136,18 @@
    color: #F90;
  }
 
+ .main .section a:hover {
+   color: #333;
+ }
+
+ .main .section a:active {
+   color: #aaa;
+ }
+
+ .main .code {
+   width: 600px;
+ }
+
  .main .code pre {
    margin-top: 15px;
    background-color: #eee;
@@ -140,8 +156,8 @@
  .footer {
    min-height: 130px;
    padding: 10px 0;
-   background-color: #333;
    color: #F90;
+   background-color: #333;
  }
 
  .footer .container {
@@ -170,6 +186,7 @@
 
  .footer .logo-img {
    height: 100px;
+   transition: filter 0.2s;
  }
 
  .footer .logo-img:hover {
@@ -180,20 +197,20 @@
    filter: invert(0.6) sepia(1) saturate(4) hue-rotate(345deg);
  }
 
+ @media (max-width: 1127px) {
+   .header-content {
+     justify-content: center;
+   }
+ }
 
+ @media (max-width: 1127px) {
+   .nav ul {
+     justify-content: space-evenly;
+   }
+ }
 
-
-
-
-
- /*
-порядок определения стилей:
-
-   позиционирование
-   блочная модель (размеры, отступы)
-   типографика (свойства шрифта)
-   оформление (цвет фона, тень)
-   анимация
-
-     colors: https://colorscheme.ru/#0P21Tw0w0w0w0
-*/
+ @media (max-width: 768px) {
+   .main .section {
+     width: 100%;
+   }
+ }
