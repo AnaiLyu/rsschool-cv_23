@@ -201,6 +201,7 @@
    filter: invert(0.6) sepia(1) saturate(4) hue-rotate(345deg);
  }
 
+
  @media (max-width: 1127px) {
    .header-content {
      justify-content: center;
