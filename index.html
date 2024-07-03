@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/img/ava.ico" type="image/ico">
+  <title>CV Anai Lyu</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <section class="section" id="profile">
+        <div>
+          <h1>Anai Lyu</h1>
+          <p>Trainee Front End Developer</p>
+        </div>
+        <div class="photo-avatar" title="Avatar Anai Lyu"></div>
+      </section>
+      <nav class="nav">
+        <ul>
+          <li class="nav-list"><a href="#contacts">Contacts</a></li>
+          <li class="nav-list"><a href="#skills">Skills</a></li>
+          <li class="nav-list"><a href="#experience">Experience</a></li>
+          <li class="nav-list"><a href="#education">Education</a></li>
+          <li class="nav-list"><a href="#about">About Me</a></li>
+          <li class="nav-list"><a href="#languages">Languages</a></li>
+          <li class="nav-list"><a href="#code">Code Example</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section class="section" id="contacts">
+        <h2>Contacts</h2>
+        <ul>
+          <li>E-mail: lyuanai88@gmail.com</li>
+          <li>Phone: +30 695 717 9721</li>
+          <li>GitHub: AnaiLyu</li>
+          <li>Telegram: @liana2221</li>
+          <li>Discord: liana2221</li>
+        </ul>
+      </section>
+      <section class="section" id="about">
+        <h2>About Me</h2>
+        <p>I strive to be part of a friendly and professional team where I could develop my Frontend development skills
+          to achieve team results.
+        </p>
+      </section>
+      <section class="section" id="experience">
+        <h2>Experience</h2>
+        <p>Work on projects during training:</p>
+        <p>The site created on the html5/css3 training course with semantic layout has a block with video, as well as
+          video as a background. <a href="https://ananailyu.github.io/HTML5/simple_psd_template"
+            target="_blank">Here</a></p>
+        <p>Website created on the html5/css3 tutorial. There is a mobile version for the screen 576px. The site is
+          entirely built on flexbox. <a href="https://github.com/AnaiLyu/HTML5/tree/master/new" target="_blank">Here</a>
+        </p>
+      </section>
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <p>RS Schools Course «<a href="https://rs.school/js/" target="_blank">JavaScript/Front-end</a>» (in progress)
+        </p>
+        <p><a href="https://gb.ru/" target="_blank">GB</a> - Frontend developer (in progress)</p>
+        <p>Full course 11 hours <a href="https://youtu.be/CxgOKJh4zWE" target="_blank">Javascript</a> for beginners</p>
+      </section>
+      <section class="section" id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (Basic)</li>
+          <li>Git</li>
+          <li>VS Code, Sublime Text</li>
+        </ul>
+      </section>
+      <section class="section" id="languages">
+        <h2>Languages</h2>
+        <p>Russian (Native)</p>
+        <p>Ukrainian (Native)</p>
+        <p>Greek (Intermediate)</p>
+      </section>
+      <section class="section code" id="code">
+        <h2>Code Example</h2>
+        <p>The function that determines the second largest number</p>
+        <pre>
+          <code>
+          const secondMaxNum = (arr) => {
+            const numLength = arr.length;
+            let max = arr[0];
+            let secondMax = 0;
+
+            for (let i = 0; i &lt; numLength; i++) {
+              if (max &lt; arr[i]) {
+                max = arr[i];
+              }
+            }
+
+            for (let i = 0; i &lt; numLength; i++) {
+              if (max > arr[i] && secondMax &lt; arr[i]) {
+                secondMax = arr[i];
+              }
+            }
+            return secondMax;
+          }
+        </code>
+      </pre>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="copy">&copy; 2023 <a href="https://github.com/AnaiLyu">anailyu</a></p>
+      <a class="logo-link" href="https://rs.school" target="_blank"><img class="logo-img"
+          src="assets/svg/rs_school_js.svg" alt="RS Schools" title="Rolling Scopes School"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
