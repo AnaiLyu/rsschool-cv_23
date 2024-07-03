@@ -1,0 +1,221 @@
+ /*  плюс в карму тому, кто найдёт пасхалку  */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ html {
+   scroll-behavior: smooth;
+ }
+
+ body {
+   max-width: 1400px;
+   min-height: 100vh;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+
+ a {
+   text-decoration: none;
+   transition: color 0.2s;
+ }
+
+ li {
+   list-style: none;
+ }
+
+ .container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 100px;
+ }
+
+ .header {
+   min-height: 170px;
+   padding: 10px 0;
+   color: #F90;
+   background-color: #333;
+ }
+
+ .header-content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-flow: row wrap;
+ }
+
+ .header-content .section {
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: flex-start;
+   flex-flow: row wrap;
+ }
+
+ .header-content .section h1 {
+   font-size: 30px;
+ }
+
+ .header-content .section p {
+   font-size: 17px;
+   color: #F90;
+ }
+
+ .photo-avatar {
+   display: inline-block;
+   width: 150px;
+   height: 150px;
+   margin-left: 20px;
+   border-radius: 50%;
+   background-image: url(assets/img/ava.jpg);
+   background-size: 150px 150px;
+   background-repeat: no-repeat;
+ }
+
+ .photo-avatar:active {
+   background-image: url(assets/img/AnaiLyu.gif);
+ }
+
+ .nav {
+   margin-top: 34px;
+ }
+
+ .nav ul {
+   display: flex;
+   align-items: center;
+   align-content: center;
+   justify-content: flex-end;
+   flex-flow: row wrap;
+ }
+
+ .nav-list a {
+   padding: 5px;
+   font-size: 17px;
+   color: #F90;
+ }
+
+ .nav-list a:hover {
+   color: #fff;
+ }
+
+ .nav-list a:active {
+   color: #666;
+ }
+
+ .main {
+   padding: 90px 0;
+   flex-grow: 1;
+ }
+
+ .main .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-flow: row wrap;
+ }
+
+ .main .section {
+   width: 45%;
+   margin-bottom: 30px;
+ }
+
+ .main .section:nth-last-child(1) {
+   margin-bottom: 0;
+ }
+
+ .main .section h2 {
+   margin-bottom: 15px;
+   color: #F90;
+ }
+
+ .main .section p {
+   font-size: 17px;
+   color: #333;
+ }
+
+ .main .section a {
+   color: #F90;
+ }
+
+ .main .section a:hover {
+   color: #333;
+ }
+
+ .main .section a:active {
+   color: #aaa;
+ }
+
+ .main .code {
+   width: 600px;
+ }
+
+ .main .code pre {
+   margin-top: 15px;
+   background-color: #eee;
+ }
+
+ .footer {
+   min-height: 130px;
+   padding: 10px 0;
+   color: #F90;
+   background-color: #333;
+ }
+
+ .footer .container {
+   display: flex;
+   align-items: end;
+   justify-content: space-between;
+   flex-flow: row wrap;
+ }
+
+ .footer .copy {
+   font-size: 17px;
+ }
+
+ .footer .copy a {
+   padding: 5px;
+   color: #F90;
+ }
+
+ .footer .copy a:hover {
+   color: #000;
+ }
+
+ .footer .copy a:active {
+   color: #666;
+ }
+
+ .footer .logo-img {
+   height: 100px;
+   transition: filter 0.2s;
+ }
+
+ .footer .logo-img:hover {
+   filter: invert(0.9);
+ }
+
+ .footer .logo-img:active {
+   filter: invert(0.6) sepia(1) saturate(4) hue-rotate(345deg);
+ }
+
+
+ @media (max-width: 1127px) {
+   .header-content {
+     justify-content: center;
+   }
+ }
+
+ @media (max-width: 1127px) {
+   .nav ul {
+     justify-content: space-evenly;
+   }
+ }
+
+ @media (max-width: 768px) {
+   .main .section {
+     width: 100%;
+   }
+ }
